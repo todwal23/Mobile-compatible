@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="http://yahoo.com">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="topnav-right"><a href="signup.html">Sign Up</a></li>
+                <li class="topnav-right"><a href="signin.html">Sign In</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+        <h1>Sign Up</h1>
+
+        <form>
+            <label for="name">Name*</label><br>
+            <input id="name" name="name" type="text" required><br>
+            <label for="email">Email*</label><br>
+            <input id="email" name="email" type="text" required><br>
+            <label for="telephone">Telephone</label><br>
+            <input 
+                   id="telephone" 
+                   type="text"
+                   size="3"
+                   maxlength="3"
+                   placeholder="555"
+                   >
+            <input 
+                   id="telephone"
+                   type="text"
+                   size="3"
+                   maxlength="3"
+                   placeholder="555"
+                   >
+            <input 
+                   id="telephone"
+                   type="text"
+                   size="4"
+                   maxlength="4"
+                   placeholder="5555"
+                   >
+            <br><br>
+            <label for="dob">DOB*</label><br>
+            <input type="date" required><br><br>
+            <label for="gender">Gender</label><br>
+            <input 
+                   name="gender" 
+                   id="male" 
+                   type="radio"
+                   value="male">
+            <label for="male">Male</label>
+            
+            <input 
+                   name="gender" 
+                   id="female" 
+                   type="radio"
+                   value="female">
+            <label for="female">Female</label>
+            <input 
+                   name="gender" 
+                   id="other" 
+                   type="radio"
+                   value="other">
+            <label for="other">Other</label><br><br>
+            
+            <label for="householdSize">Household size</label><br>
+            <input 
+                   id="householdSize" 
+                   name="householdSize"
+                   type="text"
+                   size="5"
+                   required
+                   ><br><br>
+            <label for="income">Annual Income</label><br>
+            <select id="income" name="income" required>
+                <option value="lessThan40">Less than $40k</option>
+                <option value="lessThan40">$40k-$60k</option>
+                <option value="lessThan40">$60k-$80k</option>
+                <option value="lessThan40">$80k-$100k</option>
+                <option value="lessThan40">$100k & above</option>
+            </select>
+            <br><br>
+            
+            <label for="email">Password*</label><br>
+            <input type="password" placeholder="Password"><br>
+            <label for="email">Confirm Password*</label><br>
+            <input type="password" placeholder="Confirm Password"><br><br>
+            
+            <input type="checkbox"
+                   name="terms"
+                   id="terms"
+                   value="terms">
+            <label for="terms">By signing up, you agree to the</label>
+            <a href="service.html">Terms Of Service</a>
+            <br><br><br>
+            
+            <input type="submit">
+            <br><br><br>
+               
+        </form>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <h3>Address:</h3>
+                        <h3>300 East Pine Ave</h3>
+                        <h3>West Lafayette, IN 47906</h3>
+                    </div>
+                    <div class="col-4">
+                        <h3>Phone #'s:</h3>
+                        <h3><a href="#">765-409-2699</a></h3>
+                        <h3><a href="#">765-409-6300</a></h3>
+                        <h3><a href="#">123-555-1212</a></h3>
+                    </div>
+                    <div class="col-4">
+                        <h3><a href="http://www.devslopes.com">Devslopes</a></h3>
+                        <h3><a href="http://www.codepen.io">CodePen</a></h3>
+                        <h3><a href="http://www.w3schools.com">W3 Schools</a></h3>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script>
+            function dropdownMenu() {
+                var x = document.getElementById("dropdownClick");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Mobile Compatible</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="http://yahoo.com">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="topnav-right"><a href="signup.html">Sign Up</a></li>
+                <li class="topnav-right"><a href="signin.html">Sign In</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <header>My Mobile Compatible Blog</header>
+        </div>
+        <hr>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h1>Todd Wallace</h1>
+                    <h2>&#8669; That's my name &#8668;</h2>
+                    <h3>&#65121; I'm 51 &#65121;</h3>
+                </div>
+                <div class="col-4">
+                    <h1>Jodie Wallace</h1>
+                    <h2>&#8669; That's my wife &#8668;</h2>
+                    <h3>&#65121; She's 49 &#65121;</h3>
+                </div>
+                <div class="col-4">
+                    <h1>The &#9420;allace's&#169;</h1>
+                    <h2>&#8669; Since 1989 &#8668;</h2>
+                    <h3>&#65121; That's 33 years &#65121;</h3>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="todd">
+                        <img src="images/Kids 2011 080.JPG" alt="me">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="jodie">
+                        <img src="images/jodie.jpg" alt="jo">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="us">
+                        <img src="images/Me_N_Jodie.jpg" alt="us">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div>
+                        <h2 class="underscore">Our Life</h2>
+                        <p>We have had a pretty amazing life so far. We've been through thick and thin together
+                            and are still madly in love with each other!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div>
+                        <h2 class="underscore">Our Kids</h2>
+                        <p>We have two beautiful and amazing daughters. They are both wonderful parents to my grandkids.
+                            I am so proud of them and what they have become.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div>
+                        <h2 class="underscore">Our Grandkids</h2>
+                        <p>We have five grandkids. Four boys and one girl. Aspen has two boys; Liam and Spencer.
+                            Carrington has Gatlin and also Jed and Reylynn.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div>
+                        <h2 class="underscore">Our Pet</h2>
+                        <p>Henry is my dog and buddy! He is a funny looking dog, but I love him alot! He looks out 
+                            for me when I don't feel good.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <h3>Address:</h3>
+                        <h3>300 East Pine Ave</h3>
+                        <h3>West Lafayette, IN 47906</h3>
+                    </div>
+                    <div class="col-4">
+                        <h3>Phone #'s:</h3>
+                        <h3><a href="#">765-409-2699</a></h3>
+                        <h3><a href="#">765-409-6300</a></h3>
+                        <h3><a href="#">123-555-1212</a></h3>
+                    </div>
+                    <div class="col-4">
+                        <h3><a href="http://www.devslopes.com">Devslopes</a></h3>
+                        <h3><a href="http://www.codepen.io">CodePen</a></h3>
+                        <h3><a href="http://www.w3schools.com">W3 Schools</a></h3>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+        <script>
+            function dropdownMenu() {
+                var x = document.getElementById("dropdownClick");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </body>
+</html>

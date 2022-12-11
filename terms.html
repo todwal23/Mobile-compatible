@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Terms of Service</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="http://yahoo.com">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="topnav-right"><a href="signup.html">Sign Up</a></li>
+                <li class="topnav-right"><a href="signin.html">Sign In</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+        <h1>Terms Of Service</h1>
+        <hr>
+        <p class="terms">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mollis aliquam ut porttitor leo. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Erat velit scelerisque in dictum non consectetur a erat nam. Diam vel quam elementum pulvinar etiam. In nisl nisi scelerisque eu ultrices vitae auctor eu. Massa tincidunt dui ut ornare. Feugiat in fermentum posuere urna nec. Dolor sit amet consectetur adipiscing elit pellentesque. Nascetur ridiculus mus mauris vitae ultricies. Dolor morbi non arcu risus quis varius quam quisque. Cras tincidunt lobortis feugiat vivamus at augue eget.</p>
+
+        <hr>
+        <br><br><br><br><br>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <h3>Address:</h3>
+                        <h3>300 East Pine Ave</h3>
+                        <h3>West Lafayette, IN 47906</h3>
+                    </div>
+                    <div class="col-4">
+                        <h3>Phone #'s:</h3>
+                        <h3><a href="#">765-409-2699</a></h3>
+                        <h3><a href="#">765-409-6300</a></h3>
+                        <h3><a href="#">123-555-1212</a></h3>
+                    </div>
+                    <div class="col-4">
+                        <h3><a href="http://www.devslopes.com">Devslopes</a></h3>
+                        <h3><a href="http://www.codepen.io">CodePen</a></h3>
+                        <h3><a href="http://www.w3schools.com">W3 Schools</a></h3>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script>
+            function dropdownMenu() {
+                var x = document.getElementById("dropdownClick");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </body>
+</html>

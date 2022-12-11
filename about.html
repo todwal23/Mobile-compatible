@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>About Me</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="http://yahoo.com">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="topnav-right"><a href="signup.html">Sign Up</a></li>
+                <li class="topnav-right"><a href="signin.html">Sign In</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+        <h1>About Me</h1>
+        <p class="aboutMe">Hi, my name is Todd Wallace and I am 51 years old. I am married to my best friend and soulmate, Jodie.<br> We have been together since 1989. We have two beautiful daughters and five awesome grandkids.<br>We love spending time with our kiddos. We even have some foster kids that we still stay involved with also.<br> My wife is amazing with kids. She loves to spend time playing with them.  </p>
+        <hr>
+
+
+        <footer class="signInSheet">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <h3>Address:</h3>
+                        <h3>300 East Pine Ave</h3>
+                        <h3>West Lafayette, IN 47906</h3>
+                    </div>
+                    <div class="col-4">
+                        <h3>Phone #'s:</h3>
+                        <h3><a href="#">765-409-2699</a></h3>
+                        <h3><a href="#">765-409-6300</a></h3>
+                        <h3><a href="#">123-555-1212</a></h3>
+                    </div>
+                    <div class="col-4">
+                        <h3><a href="http://www.devslopes.com">Devslopes</a></h3>
+                        <h3><a href="http://www.codepen.io">CodePen</a></h3>
+                        <h3><a href="http://www.w3schools.com">W3 Schools</a></h3>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script>
+            function dropdownMenu() {
+                var x = document.getElementById("dropdownClick");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </body>
+</html>
